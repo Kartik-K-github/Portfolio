@@ -117,3 +117,132 @@ ul {
   border-radius: 50%;
   will-change: transform;
 }
+
+/* Liquid Glass Navbar */
+.liquid-glass-nav {
+  position: sticky;
+  top: 20px;
+  z-index: 100;
+  margin: 2rem auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+
+  /* Liquid glass material */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0.02) 40%,
+    rgba(139, 92, 246, 0.04) 70%,
+    rgba(59, 130, 246, 0.05) 100%
+  );
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.02);
+  
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+/* Animated refraction highlight */
+.liquid-glass-nav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.03) 25%,
+    rgba(139, 92, 246, 0.06) 50%,
+    rgba(59, 130, 246, 0.04) 75%,
+    transparent 100%
+  );
+  animation: liquidShine 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Animated gradient border glow */
+.liquid-glass-nav::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 50px;
+  padding: 1px;
+  background: linear-gradient(
+    var(--liquid-angle, 0deg),
+    rgba(59, 130, 246, 0.3),
+    rgba(139, 92, 246, 0.2),
+    rgba(236, 72, 153, 0.15),
+    rgba(59, 130, 246, 0.1),
+    transparent
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  animation: liquidBorderRotate 8s linear infinite;
+  pointer-events: none;
+  opacity: 0.6;
+  transition: opacity 0.5s ease;
+}
+
+.liquid-glass-nav:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.03) 40%,
+    rgba(139, 92, 246, 0.06) 70%,
+    rgba(59, 130, 246, 0.07) 100%
+  );
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.35),
+    0 0 20px rgba(139, 92, 246, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.03);
+  transform: translateY(-1px);
+}
+
+.liquid-glass-nav:hover::after {
+  opacity: 1;
+}
+
+/* Liquid glass nav links */
+.liquid-glass-nav a {
+  position: relative;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.liquid-glass-nav a:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-primary);
+  text-shadow: 0 0 12px rgba(139, 92, 246, 0.4);
+}
+
+@keyframes liquidShine {
+  0%, 100% { transform: translateX(-30%); opacity: 0.5; }
+  50% { transform: translateX(30%); opacity: 1; }
+}
+
+@keyframes liquidBorderRotate {
+  0% { --liquid-angle: 0deg; }
+  100% { --liquid-angle: 360deg; }
+}
+
+@property --liquid-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}

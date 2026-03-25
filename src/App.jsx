@@ -41,7 +41,7 @@ function App() {
         }}
       />
       
-      <nav className="glass-panel" style={{ margin: '2rem auto', maxWidth: '800px', display: 'flex', justifyContent: 'space-between', padding: '1rem 2rem', borderRadius: '50px', position: 'sticky', top: '20px', zIndex: 100 }}>
+      <nav className="liquid-glass-nav">
         <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.25rem' }}>
           Kartik<span style={{ color: 'var(--accent-purple)' }}>.</span>dev
         </div>
@@ -52,6 +52,7 @@ function App() {
           <a href="#contact" style={{ fontSize: '0.9rem', fontWeight: 500 }}>Contact</a>
         </div>
       </nav>
+
 
       <main className="container">
         <Hero />
