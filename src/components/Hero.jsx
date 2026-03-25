@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2 } from 'lucide-react';
+import { Code2, Download } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -49,6 +49,9 @@ export default function Hero() {
       >
         <a href="#projects" className="glass-panel" style={{ padding: '1rem 2.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', fontWeight: 600, fontSize: '1rem' }}>
           <Code2 size={20} /> View Work
+        </a>
+        <a href="/KartikKurhewarResume.pdf" download="KartikKurhewarResume.pdf" className="glass-panel" style={{ padding: '1rem 2.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', fontWeight: 600, fontSize: '1rem' }}>
+          <Download size={20} /> Resume
         </a>
         <a href="#contact" className="glass-panel" style={{ padding: '1rem 2.5rem', display: 'inline-block', color: 'var(--text-primary)', fontWeight: 600, fontSize: '1rem', background: 'var(--accent-blue)', borderColor: 'transparent' }}>
           Get In Touch
