@@ -29,7 +29,7 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
         style={{ fontSize: '4.5rem', marginBottom: '1.5rem', letterSpacing: '-0.02em', lineHeight: 1.1 }}
       >
-        Hi, I'm <span className="text-gradient">Kartik</span> <br/> Front-End Specialist
+        Hi, I'm <span className="text-gradient">Kartik</span> <br/> Front-End Engineer
       </motion.h1>
       
       <motion.p 
@@ -50,7 +50,7 @@ export default function Hero() {
         <a href="#projects" className="glass-panel" style={{ padding: '1rem 2.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', fontWeight: 600, fontSize: '1rem' }}>
           <Code2 size={20} /> View Work
         </a>
-        <a href="/KartikKurhewar_Resume.pdf" download="KartikKurhewar_Resume.pdf" className="glass-panel" style={{ padding: '1rem 2.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', fontWeight: 600, fontSize: '1rem' }}>
+        <a href="/KartikKurhewar_Resume.pdf" download="Kartik Kurhewar - Frontend Engineer.pdf" className="glass-panel" style={{ padding: '1rem 2.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', fontWeight: 600, fontSize: '1rem' }}>
           <Download size={20} /> Resume
         </a>
         <a href="#contact" className="glass-panel" style={{ padding: '1rem 2.5rem', display: 'inline-block', color: 'var(--text-primary)', fontWeight: 600, fontSize: '1rem', background: 'var(--accent-blue)', borderColor: 'transparent' }}>

@@ -40,7 +40,7 @@ export default function Contact() {
         style={{ padding: '1.5rem 4rem', fontSize: '1.25rem', color: 'var(--text-primary)', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '1rem', cursor: 'pointer' }}
       >
         {copied ? <Check color="#10b981" /> : <Mail />} 
-        {copied ? "Copied!" : "Email Me"}
+        {copied ? "Copied and opening your Emailer" : "Email Me"}
       </motion.a>
 
       <div style={{ display: 'flex', gap: '2rem', marginTop: '6rem' }}>
