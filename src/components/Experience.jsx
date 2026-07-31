@@ -6,15 +6,28 @@ const experiences = [
     role: "Software Engineer",
     company: "Cognizant",
     period: "Dec 2021 - Present",
-    description: "Developed pixel-perfect, dynamic UIs from Figma using React.js. Improved page load speed by 30% via component optimization, lazy loading, and code-splitting. Architected scalable component architecture using React Hooks and Context/Redux. Deployed scalable React apps on Google Cloud Run and Azure, achieving 100% uptime.",
-    tech: ["React.js", "JavaScript", "Context API", "Redux", "Google Cloud", "Azure"]
+    bullets: [
+      "Built and maintained full-stack features for production GenAI healthcare products, connecting React.js frontends to Python/FastAPI backends and implementing role-based access control (RBAC) for secure access.",
+      "Built RAG (Retrieval-Augmented Generation) pipelines, integrating LLMs with MongoDB as a vector database and embeddings to ground responses in domain-specific healthcare data.",
+      "Integrated LLMs into product features using prompt engineering, leveraging GitHub Copilot and Claude Code to accelerate development velocity.",
+      "Developed pixel-perfect, responsive UIs from Figma using React.js, HTML5, CSS3, Bootstrap, and Tailwind CSS, building reusable components with Hooks, Context API, and Redux Toolkit — cutting design-to-development cycle by 25%.",
+      "Designed and built RESTful APIs and backend services using Python and FastAPI, modeling PostgreSQL schemas and optimizing queries.",
+      "Improved application performance by 30% through lazy loading, code splitting, memoization, and bundle optimization.",
+      "Implemented secure authentication and authorization using JWT and Auth0 across frontend and backend.",
+      "Deployed React apps on Google Cloud Run and Azure via automated GitHub Actions CI/CD pipelines, reducing deployment time by 40%.",
+      "Refactored legacy codebases and implemented unit testing, reducing user-reported issues by 35%.",
+      "Mentored 3 junior developers, reducing onboarding time by 50%."
+    ],
+    tech: ["React.js", "Python", "FastAPI", "LLMs", "RAG", "MongoDB", "PostgreSQL", "Redux Toolkit", "Tailwind CSS", "JWT / Auth0", "GCP", "Azure", "GitHub Actions"]
   },
   {
     role: "Bachelor of Engineering in IT",
     company: "Priyadarshini College of Engineering",
     period: "July 2017 - Aug 2021",
-    description: "Completed comprehensive coursework in Information Technology. Developed a strong foundational understanding of computer science principles, database management (SQL, PostgreSQL), and software engineering methodologies.",
-    tech: ["IT", "Algorithms", "Databases"]
+    bullets: [
+      "Completed comprehensive coursework in Information Technology, covering core computer science principles and software engineering methodologies."
+    ],
+    tech: ["SQL", "PostgreSQL", "Algorithms", "Databases"]
   }
 ];
 
@@ -52,7 +65,11 @@ export default function Experience() {
                 {exp.period}
               </span>
             </div>
-            <p style={{ color: 'var(--text-secondary)', lineHeight: 1.6 }}>{exp.description}</p>
+            <ul style={{ color: 'var(--text-secondary)', lineHeight: 1.6, paddingLeft: '1.2rem', margin: 0, display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+              {exp.bullets.map((b, i) => (
+                <li key={i}>{b}</li>
+              ))}
+            </ul>
             <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '1rem' }}>
               {exp.tech.map((t, i) => (
                 <span key={i} style={{ fontSize: '0.8rem', padding: '0.3rem 0.8rem', background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: 'var(--text-primary)' }}>

@@ -38,7 +38,7 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.2 }}
         style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', maxWidth: '600px', marginBottom: '3rem' }}
       >
-        I develop pixel-perfect, dynamic UIs using React.js. I focus on scalable component architectures, performance optimization, and rigorous testing to deliver seamless user experiences.
+        Software Engineer with 4+ years building full-stack web applications, including production GenAI healthcare products spanning React.js frontends and Python/FastAPI backends. I work with LLMs & RAG pipelines, REST API design, and performance optimization to ship secure, production-ready systems.
       </motion.p>
       
       <motion.div
@@ -50,7 +50,7 @@ export default function Hero() {
         <a href="#projects" className="glass-panel" style={{ padding: '1rem 2.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', fontWeight: 600, fontSize: '1rem' }}>
           <Code2 size={20} /> View Work
         </a>
-        <a href="/KartikKurhewar_Resume.pdf" download="Kartik Kurhewar - Frontend Engineer.pdf" className="glass-panel" style={{ padding: '1rem 2.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', fontWeight: 600, fontSize: '1rem' }}>
+        <a href="/Resume_Kartik_Kurhewar.pdf" download="Resume_Kartik_Kurhewar.pdf" className="glass-panel" style={{ padding: '1rem 2.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', fontWeight: 600, fontSize: '1rem' }}>
           <Download size={20} /> Resume
         </a>
         <a href="#contact" className="glass-panel" style={{ padding: '1rem 2.5rem', display: 'inline-block', color: 'var(--text-primary)', fontWeight: 600, fontSize: '1rem', background: 'var(--accent-blue)', borderColor: 'transparent' }}>
@@ -65,16 +65,16 @@ export default function Hero() {
         style={{ display: 'flex', gap: '4rem', marginTop: '6rem', color: 'var(--text-muted)' }}
       >
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
-          <h3 style={{ fontSize: '2rem', color: 'var(--text-primary)' }}>React</h3>
-          <p>Ecosystem</p>
+          <h3 style={{ fontSize: '2rem', color: 'var(--text-primary)' }}>4+</h3>
+          <p>Years Experience</p>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
-          <h3 style={{ fontSize: '2rem', color: 'var(--text-primary)' }}>GCP/Azure</h3>
-          <p>Cloud Deployments</p>
+          <h3 style={{ fontSize: '2rem', color: 'var(--text-primary)' }}>30%</h3>
+          <p>Faster Page Loads</p>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
-          <h3 style={{ fontSize: '2rem', color: 'var(--text-primary)' }}>100%</h3>
-          <p>Pixel Perfection</p>
+          <h3 style={{ fontSize: '2rem', color: 'var(--text-primary)' }}>35%</h3>
+          <p>Fewer User Issues</p>
         </div>
       </motion.div>
     </section>
