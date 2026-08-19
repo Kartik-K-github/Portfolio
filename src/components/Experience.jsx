@@ -7,18 +7,17 @@ const experiences = [
     company: "Cognizant",
     period: "Dec 2021 - Present",
     bullets: [
-      "Built and maintained full-stack features for production GenAI healthcare products, connecting React.js frontends to Python/FastAPI backends and implementing role-based access control (RBAC) for secure access.",
-      "Built RAG (Retrieval-Augmented Generation) pipelines, integrating LLMs with MongoDB as a vector database and embeddings to ground responses in domain-specific healthcare data.",
-      "Integrated LLMs into product features using prompt engineering, leveraging GitHub Copilot and Claude Code to accelerate development velocity.",
-      "Developed pixel-perfect, responsive UIs from Figma using React.js, HTML5, CSS3, Bootstrap, and Tailwind CSS, building reusable components with Hooks, Context API, and Redux Toolkit — cutting design-to-development cycle by 25%.",
-      "Designed and built RESTful APIs and backend services using Python and FastAPI, modeling PostgreSQL schemas and optimizing queries.",
-      "Improved application performance by 30% through lazy loading, code splitting, memoization, and bundle optimization.",
-      "Implemented secure authentication and authorization using JWT and Auth0 across frontend and backend.",
-      "Deployed React apps on Google Cloud Run and Azure via automated GitHub Actions CI/CD pipelines, reducing deployment time by 40%.",
-      "Refactored legacy codebases and implemented unit testing, reducing user-reported issues by 35%.",
-      "Mentored 3 junior developers, reducing onboarding time by 50%."
+      "Full-Stack GenAI Product Delivery: Built and maintained full-stack features for production GenAI healthcare products, connecting React.js frontends to Python/FastAPI backends; used GitHub Copilot and Claude Code to accelerate development velocity.",
+      "RAG Pipelines & Retrieval: Built RAG pipelines over domain-specific healthcare data using LangChain and ChromaDB — recursive and semantic chunking with tuned overlap, embeddings, and cosine-similarity retrieval — with prompt engineering and context grounding for accurate LLM responses.",
+      "Advanced Retrieval & Reranking: Improved retrieval quality with hybrid search (dense embeddings + BM25), cross-encoder reranking, multi-query retrieval, and RAG-Fusion (Reciprocal Rank Fusion); extended coverage to tables and images with multimodal RAG (Unstructured.io).",
+      "Backend & Database Development: Designed and built RESTful APIs and backend services using Python and FastAPI, modeling PostgreSQL schemas and optimizing queries to support frontend data requirements and internal tooling.",
+      "Frontend Development & Performance: Developed pixel-perfect, responsive UIs from Figma using React.js, HTML5, CSS3, Bootstrap, and Tailwind CSS, building reusable components with Hooks, Context API, and Redux Toolkit — cutting design-to-development cycle by 25%; improved performance by 30% via lazy loading, code splitting, memoization, and bundle optimization across Chrome, Firefox, and Safari.",
+      "Authentication & Security: Implemented secure authentication and authorization using JWT and Auth0 across frontend and backend, enforcing role-based access control (RBAC) for secure data access.",
+      "Cloud Deployment & CI/CD: Deployed React applications on Google Cloud Run and Microsoft Azure through automated GitHub Actions CI/CD pipelines, reducing deployment time by 40%.",
+      "Testing & Code Quality: Refactored legacy React codebases, implemented unit testing, and enforced coding standards, reducing user-reported issues by 35%.",
+      "Collaboration & Agile Development: Mentored 3 junior developers and collaborated with cross-functional Agile teams, reducing onboarding time by 50% while improving sprint delivery."
     ],
-    tech: ["React.js", "Python", "FastAPI", "LLMs", "RAG", "MongoDB", "PostgreSQL", "Redux Toolkit", "Tailwind CSS", "JWT / Auth0", "GCP", "Azure", "GitHub Actions"]
+    tech: ["React.js", "Python", "FastAPI", "LangChain", "ChromaDB", "RAG-Fusion", "Hybrid Search", "Reranking", "PostgreSQL", "Redux Toolkit", "Tailwind CSS", "JWT / Auth0", "RBAC", "GCP", "Azure", "GitHub Actions", "Docker"]
   },
   {
     role: "Bachelor of Engineering in IT",

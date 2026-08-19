@@ -29,7 +29,7 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
         style={{ fontSize: '4.5rem', marginBottom: '1.5rem', letterSpacing: '-0.02em', lineHeight: 1.1 }}
       >
-        Hi, I'm <span className="text-gradient">Kartik</span> <br/> Front-End Engineer
+        Hi, I'm <span className="text-gradient">Kartik</span> <br/> Full-Stack GenAI Engineer
       </motion.h1>
       
       <motion.p 
@@ -38,7 +38,7 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.2 }}
         style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', maxWidth: '600px', marginBottom: '3rem' }}
       >
-        Software Engineer with 4+ years building full-stack web applications, including production GenAI healthcare products spanning React.js frontends and Python/FastAPI backends. I work with LLMs & RAG pipelines, REST API design, and performance optimization to ship secure, production-ready systems.
+        Full-Stack Software Engineer with 4+ years of experience shipping production GenAI healthcare products end-to-end — RAG pipelines and LLM integration on Python/FastAPI backends, paired with React.js frontends. Experienced across retrieval, chunking, hybrid search, reranking, and multimodal RAG, plus REST API design, authentication & security, and performance optimization, deploying to GCP and Azure via automated CI/CD.
       </motion.p>
       
       <motion.div
