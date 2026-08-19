@@ -24,7 +24,7 @@ export default function Contact() {
       >
         <h2 style={{ fontSize: '3rem', marginBottom: '1rem' }}>Let's Build Together</h2>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', maxWidth: '600px' }}>
-          Feel free to reach out if you have a project in mind, need a skilled React developer, or just want to connect!
+          Feel free to reach out if you have a project in mind, need a skilled Full-Stack GenAi developer, or just want to connect!
         </p>
         <p style={{ color: 'var(--text-muted)', fontSize: '1rem', marginTop: '1rem' }}>+91-8830556394</p>
       </motion.div>
