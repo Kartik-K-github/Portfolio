@@ -7,21 +7,21 @@ const projects = [
     desc: "Built a React.js app to retrieve and categorize documents by date range with nested case-level data. Developed complex multi-level navigation and optimized performance with secure authentication.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
     gradient: "linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%)",
-    tags: ["React.js", "Redux/Context API", "REST APIs", "Auth", "Bootstrap", "Google Cloud"],
+    tags: ["React.js", "RAG", "Vector Search", "Embeddings", "REST APIs", "Auth (JWT/Auth0)", "Bootstrap", "Google Cloud"],
   },
   {
     title: "Marketing Content Assistant — Healthcare Payers",
     desc: "Built a responsive React.js UI to manage healthcare documents, improving processing efficiency by 40%.",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
     gradient: "linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)",
-    tags: ["React.js", "Redux", "REST APIs", "Azure"],
+    tags: ["React.js", "RAG", "LangChain", "ChromaDB", "Prompt Engineering", "REST APIs", "Azure"],
   },
   {
     title: "Healthcare Document Information Extraction",
     desc: "Developed frontend for document extraction pipeline, boosting UX and throughput by 40%.",
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop",
     gradient: "linear-gradient(135deg, #4c1d95 0%, #8b5cf6 100%)",
-    tags: ["React.js", "Context API", "REST APIs", "Google Cloud"],
+    tags: ["React.js", "RAG", "Multimodal RAG", "Semantic Chunking", "Vector Search", "REST APIs", "Google Cloud"],
   }
 ];
 
