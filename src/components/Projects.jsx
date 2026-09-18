@@ -29,7 +29,7 @@ export default function Projects() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section id="projects" style={{ padding: '6rem 0' }}>
+    <section id="projects" aria-labelledby="projects-title" style={{ padding: '6rem 0' }}>
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export default function Projects() {
         transition={{ duration: 0.6 }}
         style={{ marginBottom: '4rem' }}
       >
-        <h2 style={{ fontSize: '3rem', marginBottom: '1rem', fontWeight: '700' }}>
+        <h2 id="projects-title" style={{ fontSize: '3rem', marginBottom: '1rem', fontWeight: '700' }}>
           Featured Projects
         </h2>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem' }}>
@@ -54,7 +54,7 @@ export default function Projects() {
         }}
       >
         {projects.map((proj, index) => (
-          <motion.div 
+          <motion.article
             key={index}
             className="glass-panel"
             initial={{ opacity: 0, y: 30 }}
@@ -163,7 +163,7 @@ export default function Projects() {
 
 
             </div>
-          </motion.div>
+          </motion.article>
         ))}
       </div>
     </section>

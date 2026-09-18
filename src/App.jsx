@@ -41,10 +41,10 @@ function App() {
         }}
       />
       
-      <nav className="liquid-glass-nav">
-        <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.25rem' }}>
+      <nav className="liquid-glass-nav" aria-label="Primary navigation">
+        <a href="#about" style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.25rem' }} aria-label="Kartik Kurhewar home">
           Kartik<span style={{ color: 'var(--accent-purple)' }}>.</span>dev
-        </div>
+        </a>
         <div style={{ display: 'flex', gap: '2rem', color: 'var(--text-secondary)', alignItems: 'center' }}>
           <a href="#about" style={{ fontSize: '0.9rem', fontWeight: 500 }}>About</a>
           <a href="#experience" style={{ fontSize: '0.9rem', fontWeight: 500 }}>Experience</a>
@@ -63,7 +63,7 @@ function App() {
 
       <footer style={{ textAlign: 'center', padding: '2rem', color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '4rem', borderTop: '1px solid var(--glass-border)' }}>
         <p>Built with React & Vite. Designed with inspiration from top agencies.</p>
-        <p>&copy; {new Date().getFullYear()} Kartik. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Kartik Kurhewar. All rights reserved.</p>
       </footer>
     </div>
   );

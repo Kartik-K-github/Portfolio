@@ -4,7 +4,7 @@ import { Code2, Download } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section id="about" style={{ minHeight: '90vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', paddingTop: '4rem' }}>
+    <section id="about" aria-labelledby="about-title" style={{ minHeight: '90vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', paddingTop: '4rem' }}>
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -24,6 +24,7 @@ export default function Hero() {
       </motion.div>
       
       <motion.h1 
+        id="about-title"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}

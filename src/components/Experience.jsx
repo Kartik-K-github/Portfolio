@@ -32,7 +32,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" style={{ padding: '6rem 0' }}>
+    <section id="experience" aria-labelledby="experience-title" style={{ padding: '6rem 0' }}>
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -40,13 +40,13 @@ export default function Experience() {
         transition={{ duration: 0.6 }}
         style={{ marginBottom: '4rem' }}
       >
-        <h2 style={{ fontSize: '3rem', marginBottom: '1rem' }}>Experience & Education</h2>
+        <h2 id="experience-title" style={{ fontSize: '3rem', marginBottom: '1rem' }}>Experience & Education</h2>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem' }}>My professional journey and academic background.</p>
       </motion.div>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
         {experiences.map((exp, index) => (
-          <motion.div 
+          <motion.article
             key={index}
             className="glass-panel"
             initial={{ opacity: 0, x: -20 }}
@@ -76,7 +76,7 @@ export default function Experience() {
                 </span>
               ))}
             </div>
-          </motion.div>
+          </motion.article>
         ))}
       </div>
     </section>

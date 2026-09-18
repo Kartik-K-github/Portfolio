@@ -14,7 +14,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" style={{ padding: '6rem 0', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+    <section id="contact" aria-labelledby="contact-title" style={{ padding: '6rem 0', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +22,7 @@ export default function Contact() {
         transition={{ duration: 0.6 }}
         style={{ marginBottom: '4rem' }}
       >
-        <h2 style={{ fontSize: '3rem', marginBottom: '1rem' }}>Let's Build Together</h2>
+        <h2 id="contact-title" style={{ fontSize: '3rem', marginBottom: '1rem' }}>Let's Build Together</h2>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', maxWidth: '600px' }}>
           Feel free to reach out if you have a project in mind, need a skilled Full-Stack GenAi developer, or just want to connect!
         </p>
