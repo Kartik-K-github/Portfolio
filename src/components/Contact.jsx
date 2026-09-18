@@ -44,7 +44,7 @@ export default function Contact() {
       </motion.a>
 
       <div style={{ display: 'flex', gap: '2rem', marginTop: '6rem' }}>
-        <a href="https://linkedin.com/in/kartik-kurhewar-101a" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+        <a href="https://linkedin.com/in/kartik-kurhewar" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <Briefcase size={24}/> LinkedIn
         </a>
       </div>
